@@ -22,12 +22,13 @@ body{
 .right-nav li{
    display: inline;
    list-style: none;
-   margin: 0px 15px;
+   
 }
 .right-nav a{
     text-decoration: none;
     font-size: 25px;
-    padding: 10px;
+    padding: 17px;
+    color: black;
 }
 
 
@@ -47,11 +48,13 @@ body{
     font-weight: 500;
 }
 .banner-left button{
-    background: #E02C6D;
-    padding: 10px 15px;
+    background-color: #E02C6D;
+    padding: 15px 15px;
     font-size: 20px;
     border-radius: 50px;
     color: white;
+    box-shadow: 5px 5px 5px #75364d;
+    cursor: pointer;
 }
 
 /* popular collection */
@@ -86,6 +89,12 @@ body{
     
     margin: 20px 50px;
 }
+.see-more-button{
+    display: flex;
+    justify-content: flex-end;
+    color: #E02C6D;
+    
+}
 
 /* footer css */
 .footer{
@@ -103,4 +112,39 @@ body{
     border-radius: 25px;
 
 }
+
+/* mobile Rensponsive */
+@media only screen and (max-width:767px){
+  .navigation .right-side{
+         display: none;
+    }
+    .banner{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .banner-left, .banner-right img{
+        width: 300px;
+    }
+   .collections{
+       grid-template-columns: 1fr;
+   }
+   .single-collection{
+   width: 300px;
+   }
+   .icon{
+       width: 25px;
+   }
+}
+
+/* For Tablet Rensponsive */
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .navigation .right-side{
+        display: none;
+   }
+    .collections{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
 
