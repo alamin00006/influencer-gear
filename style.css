@@ -31,7 +31,6 @@ body{
     color: black;
 }
 
-
 .banner{
     display: flex;
     align-items: center;
@@ -56,6 +55,7 @@ body{
 .banner-left button{
     outline: 0;
     border: 0;
+    font-weight: 700;
     background-image: linear-gradient(90deg, #752f49, #E02C6D );
     padding: 15px 20px;
     font-size: 20px;
@@ -89,9 +89,12 @@ body{
     box-shadow: 5px 5px 10px gray;
     width: 400px;
 
+}  
+.single-collection{
     
-    
-}
+    margin: 20px 50px;
+}   
+
 .collection-image .img{
     width: 300px;
     height: 256px;
@@ -100,14 +103,17 @@ body{
 .collection-info .fill{
     color: #FB8200;
 }
-.single-collection{
-    
-    margin: 20px 50px;
+.rating span{
+    margin-left: 10px;
 }
+
 .see-more-button{
     display: flex;
     justify-content: flex-end;
     color: #E02C6D;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
     
 }
 
@@ -172,6 +178,7 @@ body{
   .navigation .right-side{
          display: none;
     }
+   
     .banner{
         flex-direction: column;
         flex-wrap: wrap;
