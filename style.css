@@ -195,7 +195,7 @@ body{
     .banner, .collection{
         
         flex-direction: column;
-        /* flex-wrap: wrap; */
+        
 
     }
 
@@ -223,6 +223,7 @@ body{
     font-size: 10px;
     
 }
+
    .icon{
     font-size: 20px;
     padding: 5px;
@@ -232,6 +233,9 @@ body{
     background-color: rgba(231, 230, 230, 0.233);
     border-radius: 12.5px;
 
+}
+footer{
+    width: 100%;
 }
 }
 
@@ -244,6 +248,25 @@ body{
    .collections, .banner{
     grid-template-columns: repeat(2, 1fr);
     
+}
+.collection{
+        
+    flex-direction: column;
+    
+
+}
+
+.contact{
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.contact img{
+    width: 350px;
+}
+.contact-right input, textarea{
+ font-size: 15px;
+ 
 }
     
     .icon{
@@ -261,6 +284,9 @@ body{
     }
     .contact-right input, textarea{
      font-size: 15px;
+ }
+ footer{
+     width: 100%;
  }
 }
 
