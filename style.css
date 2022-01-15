@@ -5,15 +5,16 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
-    /* background-color: rgb(197, 183, 163); */
+   
     box-sizing: border-box;
 
     
 }
 .container{
    margin: 0px 40px;
+   
 }
-
+/* -------------Navigation Part Styles--------- */
 .navigation{
     display: flex;
     align-items: center;
@@ -30,7 +31,7 @@ body{
     padding: 17px;
     color: black;
 }
-
+/* ------------------Bannner Part Styles--------------------- */
 .banner{
     display: flex;
     align-items: center;
@@ -72,7 +73,8 @@ body{
     box-shadow: 0px 2px 0px #75364d;
 }
 
-/* popular collection */
+/*-----------------------------------------
+----------- popular collection-------------- */
 
 .collection-head{
     text-align: center;
@@ -86,10 +88,14 @@ body{
 }
 .collection{
     background-color:#FFFFFF;
-    box-shadow: 5px 5px 10px gray;
+    box-shadow: 2px 2px 10px gray;
     width: 400px;
 
-}  
+}
+.collection-info{
+    
+    font-weight: 400;
+}
 .single-collection{
     
     margin: 20px 50px;
@@ -103,6 +109,7 @@ body{
 .collection-info .fill{
     color: #FB8200;
 }
+
 .rating span{
     margin-left: 10px;
 }
@@ -116,6 +123,8 @@ body{
     font-weight: 700;
     
 }
+/* ---------------------
+-----Contact Styles---------- */
 
 .contact-heading{
     text-align: center;
@@ -150,7 +159,8 @@ body{
 
 
 
-/* footer css */
+/* ------------------footer Styles-------------- */
+
 .footer{
     background-color: #0A0826;
     color: white;
@@ -171,34 +181,47 @@ body{
 }
 
 
+/* Media Queries */
 
+/* --------------mobile Rensponsive-------------- */
 
-/* mobile Rensponsive */
 @media only screen and (max-width:800px){
-  .navigation .right-side{
+    
+   
+    .navigation .right-side{
          display: none;
     }
    
-    .banner{
+    .banner, .collection{
+        
         flex-direction: column;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+
     }
+
     .banner-left, .banner-right img{
         width: 300px;
     }
-   .collections{
-       grid-template-columns: 1fr;
-       gap: 20px;
+   .collections, .banner{
+       grid-template-columns: repeat(1, 1fr);
+       
    }
-   
-   .single-collection{
-   width: 300px;
+
+    .single-collection{
+   width: 200px;
+   flex-direction: column;
    }
    .contact{
        grid-template-columns: 1fr;
+       flex-direction: column;
+   }
+
+   .contact img{
+       width: 250px;
    }
    .contact-right input, textarea{
-    font-size: 15px;
+    font-size: 10px;
+    
 }
    .icon{
     font-size: 20px;
@@ -212,15 +235,16 @@ body{
 }
 }
 
-/* For Tablet Rensponsive */
+/* --------------------For Tablet Rensponsive---------- */
+
 @media only screen and (min-width:801px) and (max-width:1023px) {
     .navigation .right-side{
         display: none;
    }
-    .collections{
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
+   .collections, .banner{
+    grid-template-columns: repeat(2, 1fr);
+    
+}
     
     .icon{
         font-size: 30px;
